@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dheeraj Kumar - Web & Blockchain developer.">
+
+    <!-- External css -->
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    {% block css %}
+    {% endblock %}
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4a16ca11b5.js" crossorigin="anonymous"></script>
+
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="{% static 'home/favicon.ico' %}" type="image/x-icon">
+
+    <!-- Titlle Tags -->
+    {% if title %}
+        <title>Dheeraj Kumar</title>
+    {% else %}
+        <title>Dheeraj Kumar - {{title}}</title>
+    {% endif %}
+  </head>
+  
+  <body>
+    <header>
+        <a href="#" ><img class="logo" src="{% static 'home/logo.png' %}" alt="logo"></a>
+        <nav>
+            <ul class="nav-list">
+                <li class="list-item"><a href="#">Works</a></li>
+                <li class="list-item"><a href="#">Blog</a></li>
+                <li class="list-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock%}
+
+    <footer>
+        <img src="{% static 'home/logo.png' %}" alt="footer-logo" class="footer-logo">
+        <p class="footer-text">That's all folks. <span class="imp-text">Thanks for scrolling.</span></p>
+        <ul class="footer-socialmedia-links">
+            <li class="footer-list-item"><a href="http://"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="footer-list-item"><a href="http://"><i class="fa-brands fa-github"></i></a></li>
+            <li class="footer-list-item"><a href="http://"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="footer-list-item"><a href="http://"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+:root {
+  /* --primary-color: #FFA500; */
+  /* --primary-color: #FFB52E; */
+  --primary-color: #ffc55c;
+  --primary-color2: #ffb52e;
+  --text-color: #dbd8e3;
+  --bg-color1: #393e46;
+  --bg-color2: #222831;
+  --el-color: #999eb4;
+  --el-color2: #474e68;
+  /* --el-color: #ADA7A7; */
+}
+
+.profile-container,
+.container,
+.container-c {
+  background-color: var(--bg-color1);
+  display: flex;
+  padding: 3.5% 14% 10%;
+}
+
+.container-c {
+  background-color: var(--bg-color1);
+}
+
+.container {
+  background-color: var(--bg-color2);
+  padding: 10% 14% 0%;
+}
+
+.name-container,
+.intro-container,
+.left-part,
+.right-part {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.left-part {
+  padding: 0 10% 0 0;
+}
+
+.name-h1 {
+  font-weight: 700;
+  font-size: 4.2rem;
+  color: var(--text-color);
+  line-height: 1;
+  padding-right: 2%;
+}
+
+.underline {
+  background-color: var(--primary-color);
+  height: 10px;
+  width: 40px;
+  margin: 5% 0% 0% 1%;
+}
+
+.intro-container {
+  padding-left: 19%;
+}
+
+.title-text,
+.desc {
+  color: var(--el-color);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.desc {
+  padding-bottom: 5%;
+}
+
+.intro-h2,
+.desc {
+  margin-bottom: 8%;
+}
+
+.title-text {
+  padding-bottom: 5%;
+}
+
+.intro-h2 {
+  font-size: 1.7rem;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.sec-text {
+  font-family: "League Spartan", sans-serif;
+}
+
+.pri-link {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.fa-arrow-right {
+  margin-left: 5%;
+}
+
+.socialmedia-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 20%;
+}
+
+.socialmedia-list-item {
+  margin: 0% 4% 0% 1%;
+}
+
+.socialmedia-list-item > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.3rem;
+}
+
+.socialmedia-list-item > a:hover {
+  color: var(--primary-color);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--bg-color2);
+}
+
+.card {
+  height: 280px;
+  width: 280px;
+  margin: 0 1%;
+  position: relative;
+  bottom: -140px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  flex-direction: row;
+  padding: 10% 2% 0 2%;
+}
+
+.card-1 {
+  background-color: var(--primary-color2);
+}
+
+.card-2,
+.card-3 {
+  background-color: var(--el-color2);
+}
+
+.container-c {
+  padding-top: 30%;
+}
+
+.skill-title {
+  color: var(--text-color);
+}
+
+.skill-icon {
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 0 8%;
+  color: white;
+}
+
+.skill-info{
+    padding-left: 7%;
+}
+
+.skill-title{
+    padding-bottom: 15%;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+.skill-info>p{
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+.container-d{
+    padding-bottom: 10%;
+}
+
+
+/* Copied */
+.blog-container>a{
+    color: var(--text-color);
+    line-height: 1em;
+    margin: 0;
+    text-decoration: none;
+}
+
+.card--article-preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--el-color);
+}
+
+.article-preview__body {
+    display: flex;
+    align-items: center;
+}
+
+.article-preview__body>h3 {
+    margin-right: 0.5em;
+    font-size: 28px;
+}
